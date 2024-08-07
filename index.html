@@ -1,22 +1,239 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normilize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
   <title>CRM</title>
 </head>
-<body>
-  <header>
 
+<body>
+  <header class="pagecrm__header">
+    <nav class="pagecrm__header-nav" id="pagecrm__header-nav">
+      <div class="header__nav--up">
+        <a class="nav__logo" href="/">
+          <img src="/images/alphaLogo.svg" alt="Логотип">
+        </a>
+        <a href="tel:+78124095222" class="nav__link">8 812 409-52-22</a>
+      </div>
+      <div class="header__nav--down">
+        <div class="nav__menu--burger"></div>
+        <form action="">
+          <input type="text" name="search">
+          <button class="nav__button-search" name="" type="submit">
+            <i class="nav__search-svg" aria-hidden="true">
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13.0667 14.5L8.86667 10.3C8.53333 10.5667 8.15 10.7778 7.71667 10.9333C7.28333 11.0889 6.82222 11.1667 6.33333 11.1667C5.12222 11.1667 4.09733 10.7471 3.25867 9.908C2.42 9.06889 2.00044 8.044 2 6.83333C2 5.62222 2.41956 4.59733 3.25867 3.75867C4.09778 2.92 5.12267 2.50044 6.33333 2.5C7.54444 2.5 8.56933 2.91956 9.408 3.75867C10.2467 4.59778 10.6662 5.62267 10.6667 6.83333C10.6667 7.32222 10.5889 7.78333 10.4333 8.21667C10.2778 8.65 10.0667 9.03333 9.8 9.36667L14 13.5667L13.0667 14.5ZM6.33333 9.83333C7.16667 9.83333 7.87511 9.54156 8.45867 8.958C9.04222 8.37444 9.33378 7.66622 9.33333 6.83333C9.33333 6 9.04156 5.29156 8.458 4.708C7.87444 4.12444 7.16622 3.83289 6.33333 3.83333C5.5 3.83333 4.79156 4.12511 4.208 4.70867C3.62444 5.29222 3.33289 6.00044 3.33333 6.83333C3.33333 7.66667 3.62511 8.37511 4.20867 8.95867C4.79222 9.54222 5.50044 9.83378 6.33333 9.83333Z"
+                  fill="white" />
+              </svg>
+            </i>
+          </button>
+        </form>
+      </div>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link">Главная</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Услуги Альфа маркетинг</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">CRM</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
+  <main class="pagecrm__main">
+    <section class="pagecrm__section-crm">
+      <h1 class="pagecrm__main-title">CRM</h1>
+      <button class="pagecrm__main-btn btn" id="pagecrm__main-btn" aria-label="Оставить заявку" type="button">оставить заявку</button>
+    </section>
 
+    <section class="pagecrm__secton-workflow">
+      <h2>Управление бизнес-процессами</h2>
+      <ul class="workflow__list">
+        <li class="workflow__item">
+          <a href="" class="workflow__link">Удобное общение с заказчиками</a>
+        </li>
+        <li class="workflow__item">
+          <a href="" class="workflow__link">Лучшие CRM-системы</a>
+        </li>
+        <li class="workflow__item">
+          <a href="" class="workflow__link">Повышение эффективности отдела продаж</a>
+        </li>
+        <li class="workflow__item">
+          <a href="" class="workflow__link">Карточка с историей событий для каждого заказчика</a>
+        </li>
+      </ul>
+
+      <ul class="workflow__list-function">
+        <li class="workflow__item-function">
+          <div class="workflow__item-descr">
+            <h3 class="workflow__descr-title">Функции:</h3>
+            <ul class="descr__list">
+              <li class="descr__item">CRM</li>
+              <li class="descr__item">Интеграция с другими сервисами</li>
+              <li class="descr__item">Онлайн-бот</li>
+            </ul>
+          </div>
+        </li>
+        <li class="workflow__item-function">
+          <div class="workflow__item-descr">
+            <h3 class="workflow__descr-title">Функции:</h3>
+            <ul class="descr__list">
+              <li class="descr__item">CRM</li>
+              <li class="descr__item">Корпоративный портал</li>
+              <li class="descr__item">Онлайн офис</li>
+              <li class="descr__item">Интеграция с другими сервисами и т.д.</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+    
+    <section class="pagecrm__section-apply">
+      <h2 class="apply__title">Оставить заявку</h2>
+      <p class="apply__text">Выберите систему для вашего бизнеса, и мы свяжемся с Вами в течение 20 минут</p>
+      <form class="apply__form" action="">
+        <input class="" type="text" name="name" placeholder="ФИО">
+        <input type="text" name="phone" placeholder="Телефон">
+        <label class="apply__dropdown" for="dropdown">Выберите систему</label>
+        <select class="apply__select" name="options" id="dropdown">
+          <option value="option1">Option 1</option>
+        </select>
+        <textarea name="description" id="" placeholder="Напишите что вас интересует,например: Покупка лицензии amoCRM"></textarea>
+        <button class="apply__btn btn" type="submit">оставить заявку</button>
+      </form>
+    </section>
+
+    <section class="pagecrm__section-benefits">
+      <h2 class="benefits__title">кому полезна crm</h2>
+      <ul class="benefits__list">
+        <li class="benefits__item">
+          <p class="benefits__item-text">Любому бизнесу, работающему с клиентской базой</p>
+        </li>
+        <li class="benefits__item">
+          <p class="benefits__item-text">На компьютер, подключите гарнитуру и звоните прямо из CRM одним кликом</p>
+        </li>
+        <li class="benefits__item">
+          <p class="benefits__item-text">На компьютер, подключите гарнитуру и звоните прямо из CRM одним кликом</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="pagecrm__section-usage">
+      <h2 class="usage__title">crm в бизнесе</h2>
+      <p class="usage__text">Наши кейсы</p>
+      <ul class="usage__list">
+        <li class="usage__item">
+          <div class="usage__descr">
+            <h3 class="usage__descr-title">“Пестовский Лесокомбинат”</h3>
+            <p class="usage__descr-text">Строительная компания</p>
+            <span class="usage__descr-text">Работают на платформе amoCRM</span>
+            <a href="" class="usage__link">Подробнее</a>
+          </div>
+        </li>
+        <li class="usage__item">
+          <div class="usage__descr">
+            <h3 class="usage__descr-title">Магазин “Mongol Store”</h3>
+            <p class="usage__descr-text">Одежда из натуральной шерсти</p>
+            <span class="usage__descr-text">Используют БитриксCRM</span>
+            <a href="" class="usage__link">Подробнее</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="pagecrm__section-cost">
+      <h2 class="cost__title">стоимость подключения</h2>
+      <ul class="cost__list">
+        <li class="cost__item">
+          <div class="cost__item-descr">
+            <h3 class="cost__descr-title">Подключение системы CRM <span class="descr__title-span">от 10 000 ₽</span></h3>
+            <p class="cost__descr-text">Покупка любого тарифа со скидкой</p>
+            <a href="" class="cost__link">заказать</a>
+          </div>
+        </li>
+
+        <li class="cost__item">
+          <div class="cost__item-descr">
+            <h3 class="cost__descr-title">Подключение системы CRM + настройка <span class="descr__title-span">от 15 000 ₽</span></h3>
+            <p class="cost__descr-text">Покупка любого тарифа со скидкой</p>
+            <p class="cost__descr-text">Индивидуальная настройка системы</p>
+            <a href="" class="cost__link">заказать</a>
+          </div>
+        </li>
+
+        <li class="cost__item">
+          <div class="cost__item-descr">
+            <h3 class="cost__descr-title">Продление лицензий amoCRM и Битрикс24 <span class="descr__title-span">от 10 000 ₽</span></h3>
+            <p class="cost__descr-text">Возможность продления лицензий со скидкой от официальных цен</p>
+            <a href="" class="cost__link">заказать</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="pagecrm__section-request">
+      <h2 class="request__title">Заявка на подбор и подключение CRM-системы </h2>
+      <p class="request__text">Проведем аудит, подготовим решение для вашего бизнеса и рассчитаем стоимость</p>
+      <form class="request__form" action="">
+        <input class="request__input" type="text" name="name" placeholder="Имя">
+        <input class="request__input" type="text" name="phone" placeholder="Телефон">
+        <label class="request__dropdown" for="dropdown">Выберите услугу</label>
+        <select class="request__select" name="options" id="dropdown">
+          <option value="option1">Option 1</option>
+        </select>
+        <button class="request__btn btn" type="submit">оставить заявку</button>
+      </form>
+    </section>
+
+    <section class="pagecrm__section-partner">
+      <h2 class="partner__title">наш партнер по crm-системам</h2>
+      <p class="partner__text">Битрикс24 (Управление бизнесом)</p>
+      <p class="partner__text">amoCRM (Управление бизнесом)</p>
+    </section>
+
+    <section class="pagecrm__section-message">
+      <h2 class="message__title">Напишите нам!</h2>
+      <p class="message__text">Заполните заявку и Мы свяжемся с Вами в течение 15 минут</p>
+      <form class="message__form" action="">
+        <input class="message__input" type="text" name="name" placeholder="Имя*">
+        <input class="message__input" type="email" name="email" placeholder="@Почта*">
+        <input class="message__input" type="text" name="phone" placeholder="+7(___) ___-__-__">
+        <textarea class="message__textarea" name="" id="" placeholder="Задать вопрос"></textarea>
+        <button class="message__btn btn" type="submit">задать вопрос</button>
+      </form>
+    </section>
+
+    <section class="pagecrm__section-contacts">
+      <h2 class="contacts__title">Контакты</h2>
+      <p class="contacts__text">Санкт-Петербург Заозёрная 8, к.2, офис 202 Пн-Пт, 10:00 - 18:00 8 (812) 409-52-22 info@alpham.pro</p>
+      <div class="contacts__map"></div>
+    </section>
   </main>
 
-  <footer>
+  <footer class="pagecrm__footer">
+    <div class="footer__logo">
+      <img src="/images/alphaLogo.svg" alt="Логотип">
+    </div>
 
+    <div class="footer__social">
+      <a class="footer__link" href="">VK</a>
+      <a class="footer__link" href="">Tg</a>
+    </div>
+
+    <div class="footer__contacts">
+      <p class="footer__contacts-text">© 2024 Альфа маркетинг Политика конфиденциальности</p>
+    </div>
   </footer>
   <script src="js/script"></script>
 </body>
+
 </html>
