@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'Play';
+  src: local('Play-Regular'), 
+      url('../font/Play-Regular.ttf') format('ttf');
+      font-display: swap;
+      font-weight: 400;
+      font-style: normal;
+}
+
+@font-face {
+  font-family: 'Play';
+  src: local('Play-Bold'), 
+      url('../font/Play-Bold.ttf') format('ttf');
+      font-display: swap;
+      font-weight: 700;
+      font-style: normal;
+}
+
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+button,
+input {
+	font: inherit;
+	transition: background-color 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+	transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+p {
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+  --color-white: #fff;
+}
+
+
+body {
+  min-width: 360px;
+  margin: 0;
+  color: var(--color-white);
+  background-image: url('/images/Фон_Моб_CRM.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: 'Play', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.wrapper {
+  max-width: 340px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
